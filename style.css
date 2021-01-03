@@ -36,6 +36,7 @@
 
 body {
 	font-family: 'Atkinson', sans-serif;
+	font-size: 1rem;
 	padding: 16px;
 	display: flex;
 	flex-direction: column;
@@ -50,8 +51,9 @@ h1 {
 }
 
 h4 { /* ul title */
-	margin: 0 0 8px;
+	margin: 0;
 	font-weight: 400;
+	font-size: 0.85rem;
 }
 
 p {
@@ -69,9 +71,39 @@ p {
 	margin: 0;
 	padding: 0;
 	display: flex;
+	flex-wrap: wrap;
 }
 
 .social-container ul li {
-	display: inline;
-	margin:0 16px 0 0;
+	margin: 4px 24px 8px 0;
+	display: flex;
+}
+
+.social-container ul li a {
+	display: flex;
+	align-items: center;
+	text-decoration: none;
+	color: black;
+}
+
+.social-container ul li a:hover {
+	color: #D1CFCF;
+}
+
+.social-container ul li a:hover svg {
+	fill:#8B8989;
+}
+
+.social-container ul li svg {
+	margin-right: 4px;
+}
+
+.social-container ul li span {
+	padding-top: 3px;
+}
+
+social-container {
+	display: flex;
+	position: relative;
+	max-width: 100%;
 }
