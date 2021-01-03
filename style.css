@@ -1,0 +1,77 @@
+/* CSS Style Sheet */
+
+/* Font face from The Braille Institute (https://brailleinstitute.org/freefont) */
+@font-face {
+	font-family: "Atkinson";
+	font-weight: 400; /* Regular */
+	src: url("Atkinson-Web-2020/Web Fonts/EOT/Atkinson-Hyperlegible-Regular-102.eot");
+	src: 
+		url("Atkinson-Web-2020/Web Fonts/SVG/Atkinson-Hyperlegible-Regular-102.svg") format("svg"),
+		url("Atkinson-Web-2020/Web Fonts/TTF/Atkinson-Hyperlegible-Regular-102.ttf") format("ttf"),
+		url("Atkinson-Web-2020/Web Fonts/WOFF/Atkinson-Hyperlegible-Regular-102.woff") format("woff"),
+		url("Atkinson-Web-2020/Web Fonts/WOFF2/Atkinson-Hyperlegible-Regular-102a.woff2") format("woff2");
+}
+
+@font-face {
+	font-family: "Atkinson";
+	font-weight: 300; /* Light */
+	src: url("Atkinson-Web-2020/Web Fonts/EOT/Atkinson-Hyperlegible-Italic-102.eot");
+	src: 
+		url("Atkinson-Web-2020/Web Fonts/SVG/Atkinson-Hyperlegible-Italic-102.svg") format("svg"),
+		url("Atkinson-Web-2020/Web Fonts/TTF/Atkinson-Hyperlegible-Italic-102.ttf") format("ttf"),
+		url("Atkinson-Web-2020/Web Fonts/WOFF/Atkinson-Hyperlegible-Italic-102.woff") format("woff"),
+		url("Atkinson-Web-2020/Web Fonts/WOFF2/Atkinson-Hyperlegible-Italic-102a.woff2") format("woff2");
+}
+
+@font-face {
+	font-family: "Atkinson";
+	font-weight: 700; /* Bold */
+	src: url("Atkinson-Web-2020/Web Fonts/EOT/Atkinson-Hyperlegible-Bold-102.eot");
+	src: 
+		url("Atkinson-Web-2020/Web Fonts/SVG/Atkinson-Hyperlegible-Bold-102.svg") format("svg"),
+		url("Atkinson-Web-2020/Web Fonts/TTF/Atkinson-Hyperlegible-Bold-102.ttf") format("ttf"),
+		url("Atkinson-Web-2020/Web Fonts/WOFF/Atkinson-Hyperlegible-Bold-102.woff") format("woff"),
+		url("Atkinson-Web-2020/Web Fonts/WOFF2/Atkinson-Hyperlegible-Bold-102a.woff2") format("woff2");
+}
+
+body {
+	font-family: 'Atkinson', sans-serif;
+	padding: 16px;
+	display: flex;
+	flex-direction: column;
+	justify-content: center;
+	align-items: center;
+}
+
+h1 {
+	font-weight: 700;
+	line-height: 1;
+	margin: 0 0 16px;
+}
+
+h4 { /* ul title */
+	margin: 0 0 8px;
+	font-weight: 400;
+}
+
+p {
+	line-height: 1.5;
+	margin: 0 0 16px;
+	max-width: 60ch;
+}
+
+.body-wrapper {
+	text-align: left;
+	max-width: 800px;
+}
+
+.social-container ul {
+	margin: 0;
+	padding: 0;
+	display: flex;
+}
+
+.social-container ul li {
+	display: inline;
+	margin:0 16px 0 0;
+}
