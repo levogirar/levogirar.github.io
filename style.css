@@ -34,9 +34,28 @@
 		url("Atkinson-Web-2020/Web Fonts/WOFF2/Atkinson-Hyperlegible-Bold-102a.woff2") format("woff2");
 }
 
+/* Colors */
+:root {
+	--grey700: #545151;
+	--grey500: #8F8B8B;
+	--grey200: #E6E2E2;
+
+	--black: #000000;
+	--white: #ffffff;
+}
+
+/* Font size */
+:root {
+	--font-xs: 0.75rem;
+	--font-s: 0.875rem;
+	--font-m: 1rem;
+	--font-l: 1.125rem;
+	--font-xl: 1.5rem;
+}
+
 body {
 	font-family: 'Atkinson', sans-serif;
-	font-size: 1rem;
+	font-size: var(--font-m);
 	padding: 16px;
 	display: flex;
 	flex-direction: column;
@@ -83,15 +102,15 @@ p {
 	display: flex;
 	align-items: center;
 	text-decoration: none;
-	color: black;
+	color: var(--black);
 }
 
 .social-container ul li a:hover {
-	color: #D1CFCF;
+	color: var(--grey500);
 }
 
 .social-container ul li a:hover svg {
-	fill:#8B8989;
+	fill: var(--grey500);
 }
 
 .social-container ul li svg {
