@@ -9,45 +9,59 @@
 		// Scraping IMBD
 		// From https://www.youtube.com/watch?v=0NC9_R9TON4
 
-		function scrapeIMDB() {
-			var movieDetails = [{}];
+		// function scrapeIMDB() {
+		// 	var movieDetails = [{}];
 
-			movieDetails['Title'] = document.querySelector("#title-overview-widget > div.vital > div.title_block > div > div.titleBar > div.title_wrapper > h1").innerText;
+		// 	movieDetails['Title'] = document.querySelector("#title-overview-widget > div.vital > div.title_block > div > div.titleBar > div.title_wrapper > h1").innerText;
 
-			movieDetails['Release year'] = document.querySelector("#titleYear > a").innerText;
+		// 	movieDetails['Release year'] = document.querySelector("#titleYear > a").innerText;
 
-			movieDetails['Rating'] = document.querySelector("#title-overview-widget > div.vital > div.title_block > div > div.ratings_wrapper > div.imdbRating > div.ratingValue > strong > span").innerText;
+		// 	movieDetails['Rating'] = document.querySelector("#title-overview-widget > div.vital > div.title_block > div > div.ratings_wrapper > div.imdbRating > div.ratingValue > strong > span").innerText;
 
-			movieDetails;
-		};
+		// 	movieDetails;
+		// };
 
-		// To get rows in tables
-		var allRows = document.getElementsByTagName("tr");
-		var entries = allRows.length;
+		// // To get rows in tables
+		// var allRows = document.getElementsByTagName("tr");
+		// var entries = allRows.length;
 
-		for (let i = 0; i < entries; i++) {
-			rowText = allRows[i].innerText;
-			console.log (rowText);
+		// for (let i = 0; i < entries; i++) {
+		// 	rowText = allRows[i].innerText;
+		// 	console.log (rowText);
+		// }
+
+		// //To get meta tags
+		// document.querySelector("meta[property='og:title']").getAttribute("content");
+		// document.querySelector("meta[property='og:description']").getAttribute("content");
+
+		// function scrape() {
+		// 	var xhr = new XMLHttpRequest();
+		// 	xhr.open("get", document.getElementById("website").value);
+		// 	xhr.send();
+		// }
+
+		function getURL() {
+			var url = document.getElementById("website").value;
+			document.getElementById("window").src = url;
+			getData();
 		}
 
-		//To get meta tags
-		document.querySelector("meta[property='og:title']").getAttribute("content");
-		document.querySelector("meta[property='og:description']").getAttribute("content");
-
-		function scrape() {
-			var xhr = new XMLHttpRequest();
-			xhr.open("get", document.getElementById("website").value);
-			xhr.send();
+		function getData() {
+			var page = document.getElementById("window");
+			var pageHead = page.getElementsByTagName("head").innerText;
+			console.log(pageHead);
 		}
-
 	</script>
 </head>
 <body>
 	<div class="body-wrapper">
-		<input type="text" placeholder="Paste URL here" id="website" onchange="scrape()">
-		<iframe src="https://www.bolsoaurora.es/" frameborder="0" style="height: 500px; width: 100%;"></iframe>
+		<input type="text" placeholder="Paste URL here" id="website">
+		<button onclick="getURL()">run</button>
+		<iframe style="width: 100%;
+		min-height: 300px;" id="window" src="""></iframe>
 		<ul>
 			<li>https://javascript.info/xmlhttprequest</li>
+			<li>https://www.youtube.com/watch?v=23hrM4saaMk&t=194s</li>
 		</ul>
 	</div>
 </body>
