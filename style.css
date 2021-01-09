@@ -136,6 +136,10 @@ body {
 	align-items: center;
 }
 
+section {
+	margin: 24px 0;
+}
+
 h1 {
 	font-weight: 700;
 	line-height: 1;
@@ -155,6 +159,20 @@ label {
 .body-wrapper {
 	text-align: left;
 	max-width: 800px;
+}
+
+.profile-picture {
+	width: 200px;
+	height: 200px;
+	border-radius: 8px;
+	overflow: hidden;
+	margin-bottom: 24px;
+}
+
+.social-container {
+	display: flex;
+	position: relative;
+	max-width: 100%;
 }
 
 .social-container ul {
@@ -192,8 +210,3 @@ label {
 	padding-top: 3px;
 }
 
-social-container {
-	display: flex;
-	position: relative;
-	max-width: 100%;
-}
