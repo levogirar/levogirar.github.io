@@ -4,34 +4,34 @@
 @font-face {
 	font-family: "Atkinson";
 	font-weight: 400; /* Regular */
-	src: url("Atkinson-Web-2020/Web Fonts/EOT/Atkinson-Hyperlegible-Regular-102.eot");
+	src: url("assets/Atkinson-Web-2020/Web Fonts/EOT/Atkinson-Hyperlegible-Regular-102.eot");
 	src: 
-		url("Atkinson-Web-2020/Web Fonts/SVG/Atkinson-Hyperlegible-Regular-102.svg") format("svg"),
-		url("Atkinson-Web-2020/Web Fonts/TTF/Atkinson-Hyperlegible-Regular-102.ttf") format("ttf"),
-		url("Atkinson-Web-2020/Web Fonts/WOFF/Atkinson-Hyperlegible-Regular-102.woff") format("woff"),
-		url("Atkinson-Web-2020/Web Fonts/WOFF2/Atkinson-Hyperlegible-Regular-102a.woff2") format("woff2");
+		url("assets/Atkinson-Web-2020/Web Fonts/SVG/Atkinson-Hyperlegible-Regular-102.svg") format("svg"),
+		url("assets/Atkinson-Web-2020/Web Fonts/TTF/Atkinson-Hyperlegible-Regular-102.ttf") format("ttf"),
+		url("assets/Atkinson-Web-2020/Web Fonts/WOFF/Atkinson-Hyperlegible-Regular-102.woff") format("woff"),
+		url("assets/Atkinson-Web-2020/Web Fonts/WOFF2/Atkinson-Hyperlegible-Regular-102a.woff2") format("woff2");
 }
 
 @font-face {
 	font-family: "Atkinson";
 	font-weight: 300; /* Light */
-	src: url("Atkinson-Web-2020/Web Fonts/EOT/Atkinson-Hyperlegible-Italic-102.eot");
+	src: url("assets/Atkinson-Web-2020/Web Fonts/EOT/Atkinson-Hyperlegible-Italic-102.eot");
 	src: 
-		url("Atkinson-Web-2020/Web Fonts/SVG/Atkinson-Hyperlegible-Italic-102.svg") format("svg"),
-		url("Atkinson-Web-2020/Web Fonts/TTF/Atkinson-Hyperlegible-Italic-102.ttf") format("ttf"),
-		url("Atkinson-Web-2020/Web Fonts/WOFF/Atkinson-Hyperlegible-Italic-102.woff") format("woff"),
-		url("Atkinson-Web-2020/Web Fonts/WOFF2/Atkinson-Hyperlegible-Italic-102a.woff2") format("woff2");
+		url("assets/Atkinson-Web-2020/Web Fonts/SVG/Atkinson-Hyperlegible-Italic-102.svg") format("svg"),
+		url("assets/Atkinson-Web-2020/Web Fonts/TTF/Atkinson-Hyperlegible-Italic-102.ttf") format("ttf"),
+		url("assets/Atkinson-Web-2020/Web Fonts/WOFF/Atkinson-Hyperlegible-Italic-102.woff") format("woff"),
+		url("assets/Atkinson-Web-2020/Web Fonts/WOFF2/Atkinson-Hyperlegible-Italic-102a.woff2") format("woff2");
 }
 
 @font-face {
 	font-family: "Atkinson";
 	font-weight: 700; /* Bold */
-	src: url("Atkinson-Web-2020/Web Fonts/EOT/Atkinson-Hyperlegible-Bold-102.eot");
+	src: url("assets/Atkinson-Web-2020/Web Fonts/EOT/Atkinson-Hyperlegible-Bold-102.eot");
 	src: 
-		url("Atkinson-Web-2020/Web Fonts/SVG/Atkinson-Hyperlegible-Bold-102.svg") format("svg"),
-		url("Atkinson-Web-2020/Web Fonts/TTF/Atkinson-Hyperlegible-Bold-102.ttf") format("ttf"),
-		url("Atkinson-Web-2020/Web Fonts/WOFF/Atkinson-Hyperlegible-Bold-102.woff") format("woff"),
-		url("Atkinson-Web-2020/Web Fonts/WOFF2/Atkinson-Hyperlegible-Bold-102a.woff2") format("woff2");
+		url("assets/Atkinson-Web-2020/Web Fonts/SVG/Atkinson-Hyperlegible-Bold-102.svg") format("svg"),
+		url("assets/Atkinson-Web-2020/Web Fonts/TTF/Atkinson-Hyperlegible-Bold-102.ttf") format("ttf"),
+		url("assets/Atkinson-Web-2020/Web Fonts/WOFF/Atkinson-Hyperlegible-Bold-102.woff") format("woff"),
+		url("assets/Atkinson-Web-2020/Web Fonts/WOFF2/Atkinson-Hyperlegible-Bold-102a.woff2") format("woff2");
 }
 
 /* Colors */
@@ -130,7 +130,7 @@ select {
 body {
 	font-family: 'Atkinson', sans-serif;
 	font-size: var(--font-m);
-	padding: 16px;
+	padding: 0 16px;
 	display: flex;
 	flex-direction: column;
 	align-items: center;
@@ -146,27 +146,37 @@ h1 {
 	margin-bottom: 24px;
 }
 
+h2 {
+	line-height: 1;
+	margin-top: 24px;
+	margin-bottom: 8px;
+}
+
 p {
 	margin-bottom: 16px;
 	max-width: 60ch;
 }
 
-label {
-	font-size: var(--font-s);
-	color: var(--grey700);
-}
-
 .body-wrapper {
-	text-align: left;
+	min-height: 100vh;
+	display: flex;
+	flex-direction: column;
+	justify-content: space-between;
+	padding: 16px 0;
 	max-width: 800px;
+	text-align: left;
 }
 
-.profile-picture {
+.home-hero {
+	display: flex;
+}
+
+.home-hero img {
 	width: 200px;
 	height: 200px;
 	border-radius: 8px;
 	overflow: hidden;
-	margin-bottom: 24px;
+	margin-right: 24px;
 }
 
 .social-container {
@@ -180,6 +190,12 @@ label {
 	padding: 0;
 	display: flex;
 	flex-wrap: wrap;
+}
+
+.ul-label {
+	margin: 0;
+	font-size: var(--font-s);
+	color: var(--grey700);
 }
 
 .social-container ul li {
@@ -209,4 +225,3 @@ label {
 .social-container ul li span {
 	padding-top: 3px;
 }
-
