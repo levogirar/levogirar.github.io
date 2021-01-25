@@ -80,6 +80,7 @@ function draw() {
 	for (let wall of walls) {
 		wall.show();
 	}
+
 	particle.update(noise(xoff) * width, noise(yoff) * height);
 	particle.show();
 	particle.look(walls);
