@@ -2,55 +2,64 @@
 
 /* Font face from The Braille Institute (https://brailleinstitute.org/freefont) */
 @font-face {
-	font-family: "Atkinson";
-	font-weight: 400; /* Regular */
-	src: url("assets/Atkinson-Web-2020/Web Fonts/EOT/Atkinson-Hyperlegible-Regular-102.eot");
-	src: 
-		url("assets/Atkinson-Web-2020/Web Fonts/SVG/Atkinson-Hyperlegible-Regular-102.svg") format("svg"),
-		url("assets/Atkinson-Web-2020/Web Fonts/TTF/Atkinson-Hyperlegible-Regular-102.ttf") format("ttf"),
-		url("assets/Atkinson-Web-2020/Web Fonts/WOFF/Atkinson-Hyperlegible-Regular-102.woff") format("woff"),
-		url("assets/Atkinson-Web-2020/Web Fonts/WOFF2/Atkinson-Hyperlegible-Regular-102a.woff2") format("woff2");
+    font-family: "Atkinson";
+    font-weight: 400; /* Regular */
+    src: url("assets/Atkinson-Web-2020/Web Fonts/EOT/Atkinson-Hyperlegible-Regular-102.eot");
+    src: url("assets/Atkinson-Web-2020/Web Fonts/SVG/Atkinson-Hyperlegible-Regular-102.svg")
+            format("svg"),
+        url("assets/Atkinson-Web-2020/Web Fonts/TTF/Atkinson-Hyperlegible-Regular-102.ttf")
+            format("ttf"),
+        url("assets/Atkinson-Web-2020/Web Fonts/WOFF/Atkinson-Hyperlegible-Regular-102.woff")
+            format("woff"),
+        url("assets/Atkinson-Web-2020/Web Fonts/WOFF2/Atkinson-Hyperlegible-Regular-102a.woff2")
+            format("woff2");
 }
 
 @font-face {
-	font-family: "Atkinson";
-	font-weight: 300; /* Light */
-	src: url("assets/Atkinson-Web-2020/Web Fonts/EOT/Atkinson-Hyperlegible-Italic-102.eot");
-	src: 
-		url("assets/Atkinson-Web-2020/Web Fonts/SVG/Atkinson-Hyperlegible-Italic-102.svg") format("svg"),
-		url("assets/Atkinson-Web-2020/Web Fonts/TTF/Atkinson-Hyperlegible-Italic-102.ttf") format("ttf"),
-		url("assets/Atkinson-Web-2020/Web Fonts/WOFF/Atkinson-Hyperlegible-Italic-102.woff") format("woff"),
-		url("assets/Atkinson-Web-2020/Web Fonts/WOFF2/Atkinson-Hyperlegible-Italic-102a.woff2") format("woff2");
+    font-family: "Atkinson";
+    font-weight: 300; /* Light */
+    src: url("assets/Atkinson-Web-2020/Web Fonts/EOT/Atkinson-Hyperlegible-Italic-102.eot");
+    src: url("assets/Atkinson-Web-2020/Web Fonts/SVG/Atkinson-Hyperlegible-Italic-102.svg")
+            format("svg"),
+        url("assets/Atkinson-Web-2020/Web Fonts/TTF/Atkinson-Hyperlegible-Italic-102.ttf")
+            format("ttf"),
+        url("assets/Atkinson-Web-2020/Web Fonts/WOFF/Atkinson-Hyperlegible-Italic-102.woff")
+            format("woff"),
+        url("assets/Atkinson-Web-2020/Web Fonts/WOFF2/Atkinson-Hyperlegible-Italic-102a.woff2")
+            format("woff2");
 }
 
 @font-face {
-	font-family: "Atkinson";
-	font-weight: 700; /* Bold */
-	src: url("assets/Atkinson-Web-2020/Web Fonts/EOT/Atkinson-Hyperlegible-Bold-102.eot");
-	src: 
-		url("assets/Atkinson-Web-2020/Web Fonts/SVG/Atkinson-Hyperlegible-Bold-102.svg") format("svg"),
-		url("assets/Atkinson-Web-2020/Web Fonts/TTF/Atkinson-Hyperlegible-Bold-102.ttf") format("ttf"),
-		url("assets/Atkinson-Web-2020/Web Fonts/WOFF/Atkinson-Hyperlegible-Bold-102.woff") format("woff"),
-		url("assets/Atkinson-Web-2020/Web Fonts/WOFF2/Atkinson-Hyperlegible-Bold-102a.woff2") format("woff2");
+    font-family: "Atkinson";
+    font-weight: 700; /* Bold */
+    src: url("assets/Atkinson-Web-2020/Web Fonts/EOT/Atkinson-Hyperlegible-Bold-102.eot");
+    src: url("assets/Atkinson-Web-2020/Web Fonts/SVG/Atkinson-Hyperlegible-Bold-102.svg")
+            format("svg"),
+        url("assets/Atkinson-Web-2020/Web Fonts/TTF/Atkinson-Hyperlegible-Bold-102.ttf")
+            format("ttf"),
+        url("assets/Atkinson-Web-2020/Web Fonts/WOFF/Atkinson-Hyperlegible-Bold-102.woff")
+            format("woff"),
+        url("assets/Atkinson-Web-2020/Web Fonts/WOFF2/Atkinson-Hyperlegible-Bold-102a.woff2")
+            format("woff2");
 }
 
 /* Colors */
 :root {
-	--grey700: #545151;
-	--grey500: #8F8B8B;
-	--grey200: #E6E2E2;
+    --grey700: #545151;
+    --grey500: #8f8b8b;
+    --grey200: #e6e2e2;
 
-	--black: #000000;
-	--white: #ffffff;
+    --black: #000000;
+    --white: #ffffff;
 }
 
 /* Font size */
 :root {
-	--font-xs: 0.75rem;
-	--font-s: 0.875rem;
-	--font-m: 1rem;
-	--font-l: 1.125rem;
-	--font-xl: 1.5rem;
+    --font-xs: 0.75rem;
+    --font-s: 0.875rem;
+    --font-m: 1rem;
+    --font-l: 1.125rem;
+    --font-xl: 1.5rem;
 }
 
 /* A Modern CSS Reset by Piccalilli Ltd
@@ -60,7 +69,7 @@ https://piccalil.li/blog/a-modern-css-reset */
 *,
 *::before,
 *::after {
-  box-sizing: border-box;
+    box-sizing: border-box;
 }
 
 /* Remove default margin */
@@ -74,37 +83,37 @@ figure,
 blockquote,
 dl,
 dd {
-  margin: 0;
+    margin: 0;
 }
 
 /* Remove list styles on ul, ol elements with a list role, which suggests default styling will be removed */
-ul[role='list'],
-ol[role='list'] {
-  list-style: none;
+ul[role="list"],
+ol[role="list"] {
+    list-style: none;
 }
 
 /* Set core root defaults */
 html {
-  scroll-behavior: smooth;
+    scroll-behavior: smooth;
 }
 
 /* Set core body defaults */
 body {
-  min-height: 100vh;
-  text-rendering: optimizeSpeed;
-  line-height: 1.5;
+    min-height: 100vh;
+    text-rendering: optimizeSpeed;
+    line-height: 1.5;
 }
 
 /* A elements that don't have a class get default styles */
 a:not([class]) {
-  text-decoration-skip-ink: auto;
+    text-decoration-skip-ink: auto;
 }
 
 /* Make images easier to work with */
 img,
 picture {
-  max-width: 100%;
-  display: block;
+    max-width: 100%;
+    display: block;
 }
 
 /* Inherit fonts for inputs and buttons */
@@ -112,116 +121,116 @@ input,
 button,
 textarea,
 select {
-  font: inherit;
+    font: inherit;
 }
 
 /* Remove all animations and transitions for people that prefer not to see them */
 @media (prefers-reduced-motion: reduce) {
-  *,
-  *::before,
-  *::after {
-    animation-duration: 0.01ms !important;
-    animation-iteration-count: 1 !important;
-    transition-duration: 0.01ms !important;
-    scroll-behavior: auto !important;
-  }
+    *,
+    *::before,
+    *::after {
+        animation-duration: 0.01ms !important;
+        animation-iteration-count: 1 !important;
+        transition-duration: 0.01ms !important;
+        scroll-behavior: auto !important;
+    }
 }
 
 body {
-	font-family: 'Atkinson', sans-serif;
-	font-size: var(--font-m);
-	padding: 0 16px;
-	display: flex;
-	flex-direction: column;
-	align-items: center;
+    font-family: "Atkinson", sans-serif;
+    font-size: var(--font-m);
+    padding: 0 16px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
 }
 
 section {
-	margin: 24px 0;
+    margin: 24px 0;
 }
 
 h1 {
-	font-weight: 700;
-	line-height: 1;
-	margin-bottom: 24px;
+    font-weight: 700;
+    line-height: 1;
+    margin-bottom: 24px;
 }
 
 h2 {
-	line-height: 1;
-	margin-top: 24px;
-	margin-bottom: 8px;
+    line-height: 1;
+    margin-top: 24px;
+    margin-bottom: 8px;
 }
 
 p {
-	margin-bottom: 16px;
-	max-width: 60ch;
+    margin-bottom: 16px;
+    max-width: 60ch;
 }
 
 .body-wrapper {
-	min-height: 100vh;
-	display: flex;
-	flex-direction: column;
-	justify-content: space-between;
-	padding: 16px 0;
-	max-width: 800px;
-	text-align: left;
+    min-height: 100vh;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    padding: 16px 0;
+    max-width: 800px;
+    text-align: left;
 }
 
 .home-hero {
-	display: flex;
+    display: flex;
 }
 
 .home-hero img {
-	width: 200px;
-	height: 200px;
-	border-radius: 8px;
-	overflow: hidden;
-	margin-right: 24px;
+    width: 200px;
+    height: 200px;
+    border-radius: 8px;
+    overflow: hidden;
+    margin-right: 24px;
 }
 
 .social-container {
-	display: flex;
-	position: relative;
-	max-width: 100%;
+    display: flex;
+    position: relative;
+    max-width: 100%;
 }
 
 .social-container ul {
-	margin: 0;
-	padding: 0;
-	display: flex;
-	flex-wrap: wrap;
+    margin: 0;
+    padding: 0;
+    display: flex;
+    flex-wrap: wrap;
 }
 
 .ul-label {
-	margin: 0;
-	font-size: var(--font-s);
-	color: var(--grey700);
+    margin: 0;
+    font-size: var(--font-s);
+    color: var(--grey700);
 }
 
 .social-container ul li {
-	margin: 4px 24px 8px 0;
-	display: flex;
+    margin: 4px 24px 8px 0;
+    display: flex;
 }
 
 .social-container ul li a {
-	display: flex;
-	align-items: center;
-	text-decoration: none;
-	color: var(--black);
+    display: flex;
+    align-items: center;
+    text-decoration: none;
+    color: var(--black);
 }
 
 .social-container ul li a:hover {
-	color: var(--grey500);
+    color: var(--grey500);
 }
 
 .social-container ul li a:hover svg {
-	fill: var(--grey500);
+    fill: var(--grey500);
 }
 
 .social-container ul li svg {
-	margin-right: 4px;
+    margin-right: 4px;
 }
 
 .social-container ul li span {
-	padding-top: 3px;
+    padding-top: 3px;
 }
