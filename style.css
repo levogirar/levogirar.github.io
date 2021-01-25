@@ -145,6 +145,10 @@ body {
     align-items: center;
 }
 
+footer {
+    margin-top: auto;
+}
+
 section {
     margin: 24px 0;
 }
@@ -170,7 +174,6 @@ p {
     min-height: 100vh;
     display: flex;
     flex-direction: column;
-    justify-content: space-between;
     padding: 16px 0;
     max-width: 800px;
     text-align: left;
