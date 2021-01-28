@@ -22,9 +22,9 @@ $dom = new DOMDocument();
 @$dom->loadHTML($html); // Symbol '@' added to prevent warning message
 
 // Get website text
-$bodyTexts = [];
+$texts = [];
 foreach ($dom->getElementsByTagName('body') as $body) {
-	$bodyTexts = $body->textContent;
+	$texts = $body->textContent;
 }
 
 // Find phone number & sanitize results
