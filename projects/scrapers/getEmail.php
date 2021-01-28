@@ -1,6 +1,6 @@
 <?php
 
-$url = 'https://camdencoffeeroasters.com/contacto/'; // Target website
+$url = 'https://www.bolsoaurora.es'; // Target website
 $html = file_get_contents($url);  // Download the HTML page
 
 $dom = new DOMDocument();

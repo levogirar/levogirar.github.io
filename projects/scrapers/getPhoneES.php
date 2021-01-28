@@ -12,7 +12,7 @@
 $callingCodeES = '+34';
 $callingCodeES2 = "0034";
 
-$url = 'https://camdencoffeeroasters.com/contacto/'; // Target website
+$url = 'https://www.bolsoaurora.es'; // Target website
 $html = file_get_contents($url);  // Download the HTML page
 
 $patternNumberES = '/(?:([+]|00)34(.)?)?(6|9)[0-9]{1,}.[0-9]{1,}.[0-9]{1,}.[0-9]{1,}(.[0-9]{1,})?/'; // Look for a Spanish phone number
