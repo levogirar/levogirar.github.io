@@ -156,7 +156,7 @@ section {
 h1 {
     font-weight: 700;
     line-height: 1;
-    margin-bottom: 24px;
+    margin-bottom: 8px;
 }
 
 h2 {
@@ -181,14 +181,11 @@ p {
 
 .home-hero {
     display: flex;
-}
-
-.home-hero img {
     width: 200px;
     height: 200px;
     border-radius: 8px;
     overflow: hidden;
-    margin-right: 24px;
+    margin-bottom: 24px;
 }
 
 .social-container {
