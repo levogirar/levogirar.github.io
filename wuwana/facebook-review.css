@@ -1,0 +1,82 @@
+/* CSS for the Facebook Review Component */
+
+.container {
+	padding: 16px;
+	border-radius: 8px;
+	box-shadow: 0 0 8px 1px rgba(0, 0, 0, 0.05);
+	overflow: hidden;
+}
+
+button {
+	margin-top: 8px;
+	padding: 4px 8px 4px 4px;
+	border: 1px solid black;
+	border-radius: 8px;
+	background-color: white;
+	color: black;
+}
+
+button:hover {
+	background-color: black;
+	color: white;
+}
+
+button a {
+	display: flex;
+	align-items: center;
+	text-decoration: none;
+	color: inherit;
+}
+
+svg {
+	margin-inline-end: 4px
+}
+
+img {
+	width: 16px;
+	height: 16px;
+	margin-right: 8px;
+}
+
+hr {
+	margin: 8px 0;
+	border: 1px solid #E3E1E1;
+}
+
+.fb-card-review {
+	display: flex;
+	align-items: flex-start;
+}
+
+.fb-card-review h4 {
+	margin: 0 0 4px;
+	font-size: var(--font-m);
+	line-height: 1;
+	font-weight: 500;
+	color: var(--grey700);
+}
+
+.fb-card-review p {
+	margin: 0;
+	max-width: 60ch;
+}
+
+.fb-card-rating {
+	display: flex;
+}
+
+.fb-card-rating h3 {
+	font-size: var(--font-xl);
+	line-height: 1.1;
+	margin: 0;
+}
+
+.fb-card-rating p {
+	color: #8B8989;
+	margin: 0;
+}
+
+.update-date {
+	color: #8B8989;
+	font-size: 14px;
+}
