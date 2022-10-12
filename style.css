@@ -48,6 +48,7 @@
     --grey700: #545151;
     --grey500: #8f8b8b;
     --grey200: #D9D9D9;
+    --yellow: #F5E257;
 
     --black: #000000;
     --white: #ffffff;
@@ -157,6 +158,11 @@ hr {
     margin: 0;
 }
 
+p {
+    margin-bottom: 16px;
+    max-width: 60ch;
+}
+
 /* Start of header section */
 
 header {
@@ -196,13 +202,66 @@ header ul li a {
 
 /* End of header section */
 
+section {
+    margin: 24px 0;
+}
+
+/* Start of welcome section */
+
+.welcome img {
+    display: flex;
+    width: 160px;
+    height: 160px;
+    border-radius: 8px;
+    overflow: hidden;
+    margin-bottom: 24px;
+}
+
+.welcome h2 {
+    font-size: 4rem;
+    margin-bottom: 16px;
+}
+
+.welcome .subtitle {
+    font-size: 1.25rem;
+    font-style: italic;
+    margin-bottom: 64px;
+    color: var(--grey700);
+}
+
+.welcome p {
+    margin-bottom: 40px;
+}
+
+/* End of welcome section */
+
+
+/* Start of componets */
+
+.action-button {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    min-height: 32px;
+    border-bottom: 1px solid var(--black);
+    margin-bottom: 64px;
+    text-decoration: none;
+    color: var(--black);
+}
+
+.action-button:hover {
+    background-color: var(--yellow);
+}
+
+.action-button p {
+    margin: 0;
+    font-weight: 700;
+}
+
+/* End of components */
 
 footer {
     margin-top: auto;
-}
-
-section {
-    margin: 24px 0;
 }
 
 
@@ -210,22 +269,6 @@ h2 {
     line-height: 1;
     margin-top: 24px;
     margin-bottom: 8px;
-}
-
-p {
-    margin-bottom: 16px;
-    max-width: 60ch;
-}
-
-
-
-.home-hero {
-    display: flex;
-    width: 200px;
-    height: 200px;
-    border-radius: 8px;
-    overflow: hidden;
-    margin-bottom: 24px;
 }
 
 .social-container {
