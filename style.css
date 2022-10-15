@@ -143,6 +143,8 @@ body {
     padding: 0 16px;
     display: flex;
     flex-direction: column;
+    align-items: center;
+    justify-content: center;
 }
 
 .body-wrapper {
@@ -150,7 +152,6 @@ body {
     display: flex;
     flex-direction: column;
     max-width: 800px;
-    text-align: left;
 }
 
 hr {
@@ -203,7 +204,7 @@ header ul li a {
 /* End of header section */
 
 section {
-    margin: 24px 0;
+    margin: 24px 0 80px;
 }
 
 /* Start of welcome section */
@@ -234,6 +235,33 @@ section {
 }
 
 /* End of welcome section */
+
+/* Start of previous jobs section */
+
+.previous-jobs h2 {
+    font-size: 1rem;
+    font-weight: 700;
+    text-transform: uppercase;
+    color: var(--grey500);
+    margin: 8px 0;
+}
+
+.previous-jobs div {
+    padding: 24px 0 40px;
+}
+
+.previous-jobs h3 {
+    font-size: 1rem;
+    text-transform: capitalize;
+    margin-bottom: 4px;
+}
+
+.previous-jobs .action-button {
+    margin-top: 24px;
+    margin-bottom: 0;
+}
+
+/* End of previous jobs section */
 
 
 /* Start of componets */
