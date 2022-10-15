@@ -160,9 +160,34 @@ hr {
 }
 
 p {
+    font-size: 1rem
     margin-bottom: 16px;
     max-width: 60ch;
 }
+
+/* Start of componets */
+
+.action-button {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    min-height: 32px;
+    border-bottom: 1px solid var(--black);
+    margin-bottom: 64px;
+    text-decoration: none;
+    color: var(--black);
+}
+
+.action-button:hover {
+    background-color: var(--yellow);
+}
+
+.action-button span {
+    margin: 0;
+    font-weight: 700;
+}
+
+/* End of components */
 
 /* Start of header section */
 
@@ -230,8 +255,9 @@ section {
     color: var(--grey700);
 }
 
-.welcome p {
-    margin-bottom: 40px;
+.welcome .action-button {
+    margin-top: 24px;
+    margin-bottom: 80px;
 }
 
 /* End of welcome section */
@@ -251,7 +277,7 @@ section {
 }
 
 .previous-jobs h3 {
-    font-size: 1rem;
+    font-size: 2rem;
     text-transform: capitalize;
     margin-bottom: 4px;
 }
@@ -264,29 +290,7 @@ section {
 /* End of previous jobs section */
 
 
-/* Start of componets */
 
-.action-button {
-    display: flex;
-    justify-content: space-between;
-    align-items: center;
-    min-height: 32px;
-    border-bottom: 1px solid var(--black);
-    margin-bottom: 64px;
-    text-decoration: none;
-    color: var(--black);
-}
-
-.action-button:hover {
-    background-color: var(--yellow);
-}
-
-.action-button p {
-    margin: 0;
-    font-weight: 700;
-}
-
-/* End of components */
 
 footer {
     margin-top: auto;
