@@ -187,6 +187,10 @@ p {
     font-weight: 700;
 }
 
+@media (hover: hover) { /* To eliminate hover effect on mobile */
+	.action-button:hover {background-color: var(--yellow);}
+}
+
 /* End of components */
 
 /* Start of header section */
@@ -265,7 +269,7 @@ section {
 /* Start of previous jobs section */
 
 .previous-jobs h2 {
-    font-size: 1rem;
+    font-size: .8rem;
     font-weight: 700;
     text-transform: uppercase;
     color: var(--grey500);
