@@ -151,7 +151,8 @@ body {
     min-height: 100vh;
     display: flex;
     flex-direction: column;
-    max-width: 800px;
+    max-width: 1000px;
+    width: 100%;
 }
 
 hr {
@@ -160,9 +161,13 @@ hr {
 }
 
 p {
-    font-size: 1rem
+    font-size: 1rem;
     margin-bottom: 16px;
     max-width: 60ch;
+}
+
+a {
+    color: var(--black);
 }
 
 @media (hover: hover) { /* To eliminate hover effect on mobile */
@@ -178,7 +183,6 @@ p {
     align-items: center;
     min-height: 32px;
     border-bottom: 1px solid var(--black);
-    margin-bottom: 64px;
     text-decoration: none;
     color: var(--black);
 }
@@ -188,8 +192,6 @@ p {
     font-weight: 700;
 }
 
-
-/* End of components */
 
 /* Start of header section */
 
@@ -206,7 +208,6 @@ header h1 {
 }
 
 header h1 a {
-    color: var(--black);
     text-decoration: none;
 }
 
@@ -225,16 +226,25 @@ header ul li {
 header ul li a {
     display: flex;
     align-items: center;
-    color: var(--black);
 }
 
 /* End of header section */
+
+.grid-container {
+    display: grid;
+    grid-template-columns: 2fr 1fr;
+    grid-column-gap: 80px;
+}
 
 section {
     margin: 24px 0 80px;
 }
 
 /* Start of welcome section */
+.welcome {
+    display: flex;
+    flex-direction: column;
+}
 
 .welcome img {
     display: flex;
@@ -242,24 +252,20 @@ section {
     height: 160px;
     border-radius: 8px;
     overflow: hidden;
-    margin-bottom: 24px;
+    margin-bottom: 40px;
 }
 
 .welcome h2 {
     font-size: 4rem;
-    margin-bottom: 16px;
+    line-height: 1;
+    margin-bottom: 8px;
 }
 
-.welcome .subtitle {
+.welcome__subtitle {
     font-size: 1.25rem;
     font-style: italic;
     margin-bottom: 64px;
     color: var(--grey700);
-}
-
-.welcome .action-button {
-    margin-top: 24px;
-    margin-bottom: 80px;
 }
 
 /* End of welcome section */
@@ -271,83 +277,44 @@ section {
     font-weight: 700;
     text-transform: uppercase;
     color: var(--grey500);
-    margin: 8px 0;
+    line-height: 1;
+    margin-bottom: 8px;
 }
 
 .previous-jobs div {
-    padding: 24px 0 40px;
+    margin: 24px 0 40px;
 }
 
-.previous-jobs h3 {
-    font-size: 2rem;
-    text-transform: capitalize;
-    margin-bottom: 4px;
-}
-
-.previous-jobs .action-button {
-    margin-top: 24px;
+.previous-jobs div:last-child {
     margin-bottom: 0;
 }
 
+.previous-jobs h3 {
+    font-size: 1.75rem;
+    line-height: 1;
+    text-transform: capitalize;
+    margin-bottom: 8px;
+}
+
 /* End of previous jobs section */
-
-
-
 
 footer {
     margin-top: auto;
 }
 
-
-h2 {
-    line-height: 1;
-    margin-top: 24px;
-    margin-bottom: 8px;
+@media screen and (max-width: 800px) {
+    .grid-container {
+        grid-template-columns: 1fr 1fr;
+        grid-column-gap: 24px;
+    }
+    
+    .welcome h2 {
+        font-size: 3rem;
+    }
 }
 
-.social-container {
-    display: flex;
-    position: relative;
-    max-width: 100%;
-}
-
-.social-container ul {
-    margin: 0;
-    padding: 0;
-    display: flex;
-    flex-wrap: wrap;
-}
-
-.ul-label {
-    margin: 0;
-    font-size: var(--font-s);
-    color: var(--grey700);
-}
-
-.social-container ul li {
-    margin: 4px 24px 8px 0;
-    display: flex;
-}
-
-.social-container ul li a {
-    display: flex;
-    align-items: center;
-    text-decoration: none;
-    color: var(--black);
-}
-
-.social-container ul li a:hover {
-    color: var(--grey500);
-}
-
-.social-container ul li a:hover svg {
-    fill: var(--grey500);
-}
-
-.social-container ul li svg {
-    margin-right: 4px;
-}
-
-.social-container ul li span {
-    padding-top: 3px;
+@media screen and (max-width: 500px) {
+    .grid-container {
+        grid-template-columns: 1fr;
+    }
 }
