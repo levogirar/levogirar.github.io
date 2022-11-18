@@ -1,8 +1,6 @@
-# Jonathan Chu Lo
+# levogirar.com
 
-![profie-picture](/assets/profile.jpeg)
-
-## Welcome to my site
+:wave: Hello there, welcome to my site. I use this Github page to host my personal website and to practice front end code. I first start on this [Figma project](https://www.figma.com/file/xMU6oOonRxksm89trPsaD5/levogirar.com?t=P3agGeLfCrW9Wq8K-1) and then I try to code it in Visual Studio Code. 
 
 My career journey has always been focused on the intersection of business and technology. I have a passion for building products that solve real problems and I am always looking for opportunities to learn and grow.
 
@@ -24,3 +22,9 @@ I taught Financial Accounting (COMM 217), Fundamental Mathematics II (MATH 209),
 I was responsible for promoting and explaining Scotiabank products and services, assisting the branch goals and quotas, and resolving miscellaneous client inquiries.
 
 [Visit Scotiabank website](https://www.scotiabank.com/ca/en/personal.html)
+
+## Contact details
+
+- Email: jonathan.chulo@icloud.com
+- Website: https://levogirar.com
+- LinkedIn: https://www.linkedin.com/in/jonathanchulo/
