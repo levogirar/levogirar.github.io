@@ -1,10 +1,38 @@
-/* CSS for the Google Place Component */
+/* CSS for the Wuwana Component */
+
+main {
+	width: 100%;
+	max-width: 1000px;
+}
+
+.wuwana-page-introduction {
+	margin: 40px 0 80px;
+}
+
+.wuwana-page-introduction h2 {
+	font-size: 2rem;
+	margin-bottom: 16px;
+	line-height: 1;
+}
+
+.wuwana-page-text {
+	margin-bottom: 80px;
+}
+
+.wuwana-page-text li {
+	max-width: 60ch;
+	margin-bottom: 16px;
+	font-size: var(--text);
+}
+
+/* Start of Google Places component */
 
 .google-container {
 	display: flex;
 	border-radius: 8px;
 	box-shadow: 0 0 8px 1px rgba(0, 0, 0, 0.05);
 	overflow: hidden;
+	margin-bottom: 80px;
 }
 
 .google-container hr {
@@ -71,6 +99,7 @@
 }
 
 .google-reviews div p {
+	font-size: 1rem;
 	margin: 0;
 }
 
@@ -131,11 +160,6 @@
 	height: 100%;
 }
 
-.update-date {
-	color: #8B8989;
-	font-size: 14px;
-}
-
 @media screen and (max-width: 600px)
 {
 	.google-container {
@@ -150,3 +174,5 @@
 		height: 400px;
 	}
 }
+
+/* End of Google Places component */

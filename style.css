@@ -61,6 +61,13 @@
     --font-m: 1rem;
     --font-l: 1.125rem;
     --font-xl: 1.5rem;
+    --text: 1rem;
+}
+
+@media screen and (max-width: 500px) {
+    :root {
+        --text: 1.25rem;
+    }
 }
 
 /* A Modern CSS Reset by Piccalilli Ltd
@@ -91,6 +98,12 @@ dd {
 ul[role="list"],
 ol[role="list"] {
     list-style: none;
+}
+
+/* Remove the indentation */
+
+ul, ol {
+    padding-inline-start: 2ch;
 }
 
 /* Set core root defaults */
@@ -161,7 +174,7 @@ hr {
 }
 
 p {
-    font-size: 1rem;
+    font-size: var(--text);
     margin-bottom: 16px;
     max-width: 60ch;
 }
@@ -346,21 +359,47 @@ section {
     font-size: 4rem;
     line-height: 1;
     margin-bottom: 8px;
+} 
+
+.wuwana-section h3 {
+    font-size: 1rem;
+    font-weight: 700;
+    text-transform: uppercase;
+    color: var(--grey500);
+    line-height: 1;
+    margin-bottom: 16px;
+    padding-bottom: 8px;
+    border-bottom: 1px solid var(--grey200);
 }
 
 .wuwana p {
     font-size: 1.25rem;
 }
 
-
 .vr {
     border-right: 1px solid var(--grey200);
 }
 
+@media screen and (max-width: 500px) {
+   .wuwana-section {
+        width: 80vw;
+        min-width: 80vw;
+        max-width: 80vw;
+        margin: 0 16px 16px;
+   }
+
+   .wuwana-section h2 {
+        font-size: 3rem;
+   }
+}
 /* End of Wuwana section */
 
 footer {
     margin-top: auto;
+}
+
+footer p {
+    font-size: 1rem;
 }
 
 @media screen and (max-width: 800px) {
