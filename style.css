@@ -268,7 +268,8 @@ header {
   display: flex;
   justify-content: center;
   width: 100%;
-  margin-top: 32px;
+  margin-top: 24px;
+  margin-bottom: 24px;
 }
 
 header a {
@@ -285,14 +286,14 @@ header .wrapper {
 }
 
 header ul {
-    margin: 0 0 32px;
+    margin: 0 0 24px;
     padding: 0;
     display: flex;
     flex-wrap: wrap;
 }
 
 header ul li {
-    margin: 0 8px 0 0;
+    margin: 0 16px 0 0;
     display: flex;
 }
 
@@ -316,11 +317,10 @@ header p {
 /* Layout */
 
 .grid-container {
-    margin-top: 24px;
     margin-bottom: 80px;
     display: grid;
     grid-template-columns: 2fr 1fr;
-    grid-gap: 24px;
+    grid-column-gap: 40px;
     width: 100%;
     max-width: 1000px;
 }
@@ -341,20 +341,20 @@ header p {
     height: 160px;
     border-radius: 8px;
     overflow: hidden;
-    margin-bottom: 40px;
+    margin-bottom: 24px;
 }
 
-.welcome h2 {
+/* .welcome h2 {
     font-size: 4rem;
     font-weight: 600;
     line-height: 1;
     margin-bottom: 8px;
-}
+} */
 
 .welcome__subtitle {
     font-size: 1.5rem;
     font-style: italic;
-    margin-bottom: 80px;
+    margin-bottom: 24px;
     color: var(--grey700);
 }
 
@@ -383,10 +383,22 @@ header p {
 }
 
 .previous-jobs h3 {
-    font-size: 1.75rem;
+    font-size: 1.25rem;
     line-height: 1;
     text-transform: capitalize;
     margin-bottom: 8px;
+}
+
+.previous-jobs p {
+  color: var(--grey700);
+  font-size: var(--font-m);
+  line-height: 1.5;
+}
+
+@media screen and (max-width: 600px) {
+  .previous-jobs p {
+    font-size: 1.25rem;
+  }
 }
 
 /* End of previous jobs section */
