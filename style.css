@@ -438,7 +438,15 @@ header p {
   flex-direction: column;
   min-width: 400px;
   min-height: 400px;
-  margin: 0 40px 40px;
+  margin: 0 24px 24px
+}
+
+.wuwana-img img {
+  border-radius: 8px;
+}
+
+.wuwana p {
+  font-size: 1.25rem;
 }
 
 .wuwana-section:first-child {
@@ -449,33 +457,22 @@ header p {
   margin-right: 0;
 }
 
-.wuwana-section h2 {
-  font-size: 4rem;
-  line-height: 1;
-  margin-bottom: 8px;
-} 
-
 .wuwana-section h3 {
-  font-size: 1rem;
+  font-size: 0.85rem;
   font-weight: 700;
   text-transform: uppercase;
   color: var(--black);
   line-height: 1;
-  margin-bottom: 16px;
-  padding-bottom: 8px;
-  border-bottom: 1px solid var(--black);
-}
-
-.wuwana p {
-  font-size: 1.25rem;
-}
-
-.vr {
-  border-right: 1px solid var(--grey200);
+  margin-bottom: 8px;
 }
 
 .wuwana .vr {
   border-right: 1px solid var(--black);
+}
+
+.wuwana li {
+  font-size: 1rem;
+  margin-block-end: 16px;
 }
 
 @media screen and (max-width: 600px) {
@@ -483,11 +480,7 @@ header p {
       width: 80vw;
       min-width: 80vw;
       max-width: 80vw;
-      margin: 0 16px 16px;
- }
-
- .wuwana-section h2 {
-      font-size: 3rem;
+      margin: 0 16px 24px;
  }
 }
 /* End of Wuwana section */
