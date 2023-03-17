@@ -335,6 +335,12 @@ header p {
 
 /* Start of welcome section */
 
+.welcome {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+}
+
 .welcome img {
     display: flex;
     width: 160px;
@@ -343,13 +349,6 @@ header p {
     overflow: hidden;
     margin-bottom: 24px;
 }
-
-/* .welcome h2 {
-    font-size: 4rem;
-    font-weight: 600;
-    line-height: 1;
-    margin-bottom: 8px;
-} */
 
 .welcome__subtitle {
     font-size: 1.5rem;
@@ -375,11 +374,11 @@ header p {
 }
 
 .previous-jobs div {
-    margin: 24px 0 40px;
+    margin: 24px 0 24px;
 }
 
 .previous-jobs div:last-child {
-    margin-bottom: 0;
+    margin: 0;
 }
 
 .previous-jobs h3 {
@@ -393,6 +392,7 @@ header p {
   color: var(--grey700);
   font-size: var(--font-m);
   line-height: 1.5;
+  margin-bottom: 0;
 }
 
 @media screen and (max-width: 600px) {
