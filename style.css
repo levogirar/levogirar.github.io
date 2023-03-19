@@ -486,6 +486,45 @@ header p {
 /* End of Wuwana section */
 
 /**
+ * Start of education section
+ */
+
+.education-line {
+  background: linear-gradient(var(--grey200), var(--grey700));
+  width: 4px;
+  border-radius: 4px;
+  height: calc(100% - 40px);
+  margin: 0 24px 0 12px;
+}
+
+.education-content {
+  margin-block-start: 16px;
+  display: flex;
+}
+
+.education-content:last-child {
+  margin-block-end: 24px;
+}
+
+.education svg {
+  margin: 0 28px 8px 0;
+}
+
+.education h3 {
+  line-height: 1.2;
+  margin-bottom: 24px;
+  color: var(--grey500);
+}
+
+.education h2 {
+  font-size: 40px;
+  font-weight: 500;
+  line-height: 1.2;
+  letter-spacing: -0.03em;
+  margin-bottom: 40px;
+}
+
+/**
  * Footer
  */
 
