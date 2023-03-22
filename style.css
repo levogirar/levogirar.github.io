@@ -435,7 +435,6 @@ header p {
   /* To hide the scroll bar */
   -ms-overflow-style: none;  /* IE and Edge */
   scrollbar-width: none;  /* Firefox */
-  margin-bottom: 80px;
 }
 
 .wuwana::-webkit-scrollbar {
@@ -508,7 +507,10 @@ header p {
   max-width: 100%;
   display: flex;
   justify-content: center;
-  margin-bottom: 40px;
+}
+
+.education-text img {
+  max-width: 60%;
 }
 
 .education .wrapper {
@@ -592,9 +594,8 @@ header p {
   display: flex;
   flex-direction: column;
   justify-content: space-between;
-  min-height: 300px;
   width: 100%;
-  max-width: 400px;
+  max-width: 320px;
   border: 1px solid var(--grey200);
   border-radius: 8px;
   padding: 16px;
@@ -611,6 +612,16 @@ header p {
 .education-card .action-button {
   justify-content: flex-start;
   width: fit-content;
+}
+
+.education-card h3 {
+  color: var(--grey700);
+  font-weight: 400;
+  text-transform: uppercase;
+}
+
+.education-card ul {
+  margin: 0;
 }
 
 .education-instructors {
@@ -649,6 +660,8 @@ header p {
 .education-instructor h4 {
   font-size: 1.5rem;
   font-weight: 500;
+  line-height: 1;
+  margin-block-end: 8px;
 }
 
 .education-instructor p {
@@ -657,7 +670,72 @@ header p {
   color: var(--grey500);
 }
 
+.education-awards p {
+  color: var(--grey500);
+  margin-bottom: 16px;
+  line-height: 1.2;
+}
+
+.education-awards p em {
+  color: var(--black);
+  text-transform: uppercase;
+  font-style: normal;
+}
+
+.education-awards p:last-child {
+  margin-bottom: 0;
+}
+
+.education-highlights {
+  display: flex;
+  flex-direction: column;
+  margin-bottom: 40px;
+}
+
+.education-highlights h3 {
+  font-size: 1.5rem;
+  font-weight: 500;
+  color: var(--grey700);
+}
+
+.education-capsule {
+  background-color: var(--white);
+  display: flex;
+  align-items: flex-start;
+  width: fit-content;
+  text-decoration: none;
+  margin-bottom: 16px;
+}
+
+.education-capsule:hover {
+  background-color: var(--white);
+}
+
+.education-capsule img {
+  border-radius: 50%;
+  max-width: 48px;
+  max-height: 48px;
+  margin-right: 12px;
+}
+
+.education-capsule p {
+  margin: 0;
+  margin-right: 4px;
+  color: var(--black);
+  font-weight: 500;
+  line-height: 1.25;
+  font-size: 1rem;
+}
+
+.education-capsule p span {
+  color: var(--grey700);
+}
+
 @media screen and (max-width: 600px) {
+  .education-text img {
+    max-width: 100%;
+  }
+
   .education-text {
     max-width: 100%;
   }
@@ -674,6 +752,15 @@ header p {
   }
   .education-cards {
     flex-direction: column;
+  }
+
+  .education-highlights h3 {
+    font-size: 1.5rem;
+  }
+
+  .education-capsule img {
+    max-width: 40px;
+    max-height: 40px;
   }
 }
 
