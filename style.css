@@ -208,6 +208,7 @@ body {
     flex-direction: column;
     align-items: center;
     justify-content: center;
+    overflow-x: hidden;
 }
 
 p {
@@ -425,11 +426,11 @@ header p {
 
 .wuwana {
   display: flex;
-  min-width: 100vw;
-  width: 100vw;
-  max-width: 100vw;
+  min-width: calc(100% + 32px);
+  width: calc(100% + 32px);
+  max-width: calc(100% + 32px);
+  margin-left: -16px;
   overflow: scroll;
-  padding: 0 max(16px, calc(50vw - 500px));
   background-color: var(--yellow);
   border-bottom: 1px solid var(--black);
   /* To hide the scroll bar */
@@ -444,6 +445,13 @@ header p {
 .wuwana .wrapper {
   display: flex;
   padding-top: 40px;
+}
+
+.wuwana .wrapper::before,
+.wuwana .wrapper::after {
+  content: "";
+  display: block;
+  flex: 0 0 max(16px, calc(50vw - 500px));
 }
 
 .wuwana-section {
@@ -807,3 +815,12 @@ footer ul li a {
   display: flex;
   align-items: center;
 }
+
+/* Utilities */
+.gradient-juno { background: linear-gradient(#EA593E, #0C4890); }
+.gradient-wuwana { background: linear-gradient(#0C4890, var(--yellow)); }
+.gradient-spacer { background: linear-gradient(var(--yellow), #77182E); height: 80px; }
+.gradient-concordia { background: linear-gradient(#77182E, #77182E); }
+.text-deusto { color: #0C4890 !important; }
+.text-concordia { color: #77182E !important; }
+.mt-auto { margin-top: auto; }
