@@ -4,7 +4,7 @@
 
 My career journey has always been focused on the intersection of business and technology. I have a passion for building products that solve real problems and I am always looking for opportunities to learn and grow.
 
-I currently work at <a href="https://www.shopify.com" target="_blank" rel="noopener">Shopify</a> as a Senior Support Specialist on the Key Accounts team. I help our largest merchants with their technical needs and help them grow their business.
+I currently work at <a href="https://www.shopify.com" target="_blank" rel="noopener">Shopify</a> as a Lead Solutions Engineer for the Iberia Market (Spain and Portugal) on the acquisition team.
 
 ## Contact details
 

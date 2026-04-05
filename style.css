@@ -410,6 +410,12 @@ header p {
   margin-bottom: 0;
 }
 
+.previous-jobs__role {
+  font-size: var(--font-s) !important;
+  color: var(--grey500) !important;
+  margin-bottom: 4px !important;
+}
+
 @media screen and (max-width: 600px) {
   .previous-jobs p {
     font-size: 1.25rem;
