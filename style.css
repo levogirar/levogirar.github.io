@@ -362,6 +362,10 @@ header ul li a {
 }
 
 @media screen and (max-width: 600px) {
+  .welcome h1 {
+    font-size: 36px;
+  }
+  
   .experiences .wrapper {
       grid-template-columns: 1fr;
       grid-row-gap: 40px;
